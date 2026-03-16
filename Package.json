@@ -1,0 +1,9 @@
+{
+  "name": "devops-node-app",
+  "version": "1.0.0",
+  "description": "Simple NodeJS app for Jenkins CI/CD pipeline",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
