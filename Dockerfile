@@ -1,5 +1,13 @@
-FROM openjdk:17
-COPY target/app.jar app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+FROM node:18
 
+WORKDIR /app
 
+COPY package.json .
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["node", "app.js"]
